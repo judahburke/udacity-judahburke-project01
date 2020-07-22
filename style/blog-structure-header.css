@@ -1,0 +1,32 @@
+.blog-header {
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin-bottom: 1em;
+}
+
+.blog-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../content/logo.png);
+    background-position: center;
+    background-size: 2em;
+    background-repeat: no-repeat;
+}
+
+.blog-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

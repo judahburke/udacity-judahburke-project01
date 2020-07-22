@@ -1,0 +1,15 @@
+.blog-content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+@media(min-width: 720px)
+{
+    .blog-content {
+        overflow-y: auto;
+        min-height: max-content;
+        height: 100%;
+    }
+}

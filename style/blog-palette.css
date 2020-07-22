@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("../content/fontawesome-free-5.13.1-web/css/all.css");
+
+body {
+    background-color: whitesmoke;
+    color: darkslategray;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif
+}
+
+h1 {
+    color: salmon;
+}
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', 'Arial Narrow Bold', sans-serif;
+}
+
+.focusable:hover {
+    border-bottom: 1px solid salmon;
+}
+.focusable:hover h2 {
+    color: salmon;
+}
+.focusable:hover h3 {
+    color: salmon;
+}
+
+.blog-link-noline {
+    text-decoration: none;
+}

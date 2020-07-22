@@ -1,0 +1,59 @@
+@import url("./main.css");
+
+
+.blog-title a {
+    color: salmon;
+}
+.blog-title a:hover {
+    color: sienna;
+}
+
+.blog-content-subtitle {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 2em;
+}
+
+.blog-content-bio {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 10em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "dsc dsc dsc dsc dsc dsc dsc dsc"
+        "img img img img img img img img";
+    padding: 0 2em;
+}
+
+.blog-content-bio-description {
+    grid-area: dsc;
+}
+
+.blog-content-bio img {
+    grid-area: img;
+    width: 10em;
+}
+
+.blog-content-body {
+    background-color: white;
+    padding: 0 2em;
+}
+
+.blog-content {
+    margin-bottom: 1em;
+}
+
+
+@media(min-width:720px)
+{
+
+    .blog-content-bio {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 10em;
+        grid-template-areas: 
+         "dsc dsc dsc dsc img img img img";
+    }
+
+}

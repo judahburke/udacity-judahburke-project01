@@ -1,0 +1,25 @@
+
+.blog-footer {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1em;
+    grid-template-columns: 2fl 1fl;
+    grid-template-areas: 
+        "sm sm cp cp cp cp cp cp";
+    margin-top: 1em;
+}
+
+.blog-footer-social {
+    grid-area: sm;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog-footer-copyright {
+    grid-area: cp;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
