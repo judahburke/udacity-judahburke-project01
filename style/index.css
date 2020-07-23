@@ -7,9 +7,9 @@
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
     grid-template-areas: 
-     "img img img img img img img img"
-     "dsc dsc dsc dsc dsc dsc dsc dsc"
-     "btn btn btn btn btn btn btn btn";
+     "img"
+     "dsc"
+     "btn";
     grid-gap: .25em;
 }
 .blog-content-card-right {
@@ -19,9 +19,9 @@
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
     grid-template-areas: 
-     "img img img img img img img img"
-     "dsc dsc dsc dsc dsc dsc dsc dsc"
-     "btn btn btn btn btn btn btn btn";
+     "img"
+     "dsc"
+     "btn";
     grid-gap: .25em;
 
 }
@@ -32,7 +32,7 @@
 }
 .blog-content-card-image {
     grid-area: img;
-    width: 100%;
+    width: 10em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,10 @@
     text-align: center;
 }
 .blog-content-card-image img {
-    width: 10em;
+    width: 100%;
+    height:100%;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .blog-content-card-button {
     grid-area: btn;
@@ -66,17 +69,17 @@
 
     .blog-content-card-left {
         grid-template-rows: 1fr 1em;
-        grid-template-columns: 1fr 10em;
+        grid-template-columns: auto auto;
         grid-template-areas: 
-         "dsc dsc dsc dsc img img img img"
-         "btn btn btn btn img img img img";
+         "dsc img"
+         "btn img";
     }
     .blog-content-card-right {
         grid-template-rows: 1fr 1em;
-        grid-template-columns: 10em 1fr;
+        grid-template-columns: auto auto;
         grid-template-areas: 
-         "img img img img dsc dsc dsc dsc"
-         "img img img img btn btn btn btn";
+         "img dsc"
+         "img btn";
     }
 
 }

@@ -5,7 +5,12 @@
 body {
     background-color: whitesmoke;
     color: darkslategray;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    --main-color: darkslategray;
+    --accent-color: salmon;
+    --support-color: #43aa8b;
+    --contrast-color: darkorchid;
+    --highcontrast-color: #ffe900;
 }
 
 h1 {
@@ -27,4 +32,12 @@ h1,h2,h3,h4 {
 
 .blog-link-noline {
     text-decoration: none;
+}
+
+.blog-underlined {
+    text-decoration: underline salmon ;
+}
+
+figcaption {
+    font-size: .7em;
 }

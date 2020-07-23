@@ -45,6 +45,10 @@
     margin-bottom: 1em;
 }
 
+figcaption {
+    text-align: right;
+}
+
 
 @media(min-width:720px)
 {
